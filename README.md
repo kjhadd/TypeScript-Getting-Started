@@ -8,3 +8,15 @@ exists at the end of that module.
 I will update this repo below with any problems or small issues reported between updates to the actual course.
 
 Thanks for watching and good luck on your TypeScript projects!
+
+## Workarounds
+Some project dependencies are quite old. To get this hunk-of-junk working need to:
+
+```shell
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+Undo by:
+```shell
+unset NODE_OPTIONS
+```
